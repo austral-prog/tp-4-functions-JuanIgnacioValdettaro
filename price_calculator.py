@@ -37,9 +37,8 @@ def best_deal(price_a, qty_a, disc_a, price_b, qty_b, disc_b, tax_pct):
     """
     final_a = final_price(price_a, qty_a, disc_a, tax_pct)
     final_b= final_price(price_b, qty_b, disc_b, tax_pct)
-    if final_a > final_b:
+    if final_a <= final_b:
         return "A"
-    elif final_a < final_b:
-        return "B"
     else:
-        return "A"  # Remove this line and implement
+        return "B"
+     # Remove this line and implement

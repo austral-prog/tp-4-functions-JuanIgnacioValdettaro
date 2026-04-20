@@ -5,9 +5,9 @@ def roots(a, b, c):
     if raiz > 0:
         x1= (-b + raiz**(1/2))/(2*a)
         x2= (-b - raiz**(1/2))/(2*a)
-        return f"({x1},{x2})"
+        return f"({x1}, {x2})"
     elif raiz == 0:
-        x1=(-b)/(2*a)
+        x1=(-b) / (2*a)
         return f"({x1})"
     else:
         return "( )"
