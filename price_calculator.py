@@ -21,10 +21,10 @@ def final_price(price, quantity, discount_pct, tax_pct):
       3. Aplicar el impuesto al resultado usando apply_tax.
       4. Retornar el resultado redondeado a 2 decimales usando round().
     """
-    subtotal= price * quantity
-    discount=apply_discount(subtotal, discount_pct)
-    tax=apply_tax(discount, tax_pct)
-    return round(tax,2)
+    subtotal = price * quantity
+    with_discount = apply_discount(subtotal, discount_pct)
+    with_tax = apply_tax(with_discount, tax_pct)
+    return round(with_tax, 2)
       # Remove this line and implement
 
 def best_deal(price_a, qty_a, disc_a, price_b, qty_b, disc_b, tax_pct):

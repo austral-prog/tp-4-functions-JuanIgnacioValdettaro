@@ -1,16 +1,16 @@
 # Replace the "ANSWER HERE" for your answer
 
 def roots(a, b, c):
-    raiz= b**2-4*a*c
+    raiz= b**2 - 4*a*c
     if raiz > 0:
         x1= (-b + raiz**(1/2))/(2*a)
         x2= (-b - raiz**(1/2))/(2*a)
         return f"({x1},{x2})"
     elif raiz == 0:
-        x1=(-b/(2*a))
+        x1=(-b)/(2*a)
         return f"({x1})"
     else:
-        return "()"
+        return "( )"
 
 
 def value_y(a, b, c, x):
